@@ -20,6 +20,7 @@ namespace AtlasWichita.Controllers
         // GET: /User/Quiz
         public ActionResult Quiz(string button1, string button2)
         {
+            Quiz userQuiz = new Quiz();
             List<Adjective> adjectiveList = new List<Adjective>();
             makeList(adjectiveList);
             return View();

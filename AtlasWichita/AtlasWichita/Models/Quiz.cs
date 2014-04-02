@@ -36,4 +36,30 @@ namespace AtlasWichita.Models
             this.elegantValue = k;
         }
     }
+
+    /*
+     * Each question will have a string for the actual question, and an adjective for each answer.
+     */
+
+    public class Question
+    {
+        public Adjective answerA, answerB;
+        public String question;
+
+        public Question(String question, Adjective a, Adjective b)
+        {
+            this.answerA = a;
+            this.answerB = b;
+        }
+
+    }
+
+    /*
+     * This will be a list of questions for the user to answer.
+     */ 
+
+    public class Quiz
+    {
+        public List<Question> QuizQuestions;
+    }
 }
